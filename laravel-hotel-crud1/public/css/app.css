@@ -74,7 +74,7 @@ footer {
 }
 
 #home ul li {
-  width: 33%;
+  width: 50%;
 }
 
 #home ul li .card {
@@ -93,6 +93,18 @@ footer {
 
 #home ul li .card h3 {
   border-bottom: solid 1px black;
+}
+
+#home ul li .card .options a.mod:hover {
+  color: yellow;
+}
+
+#home ul li .card .options a.del {
+  margin-left: 5px;
+}
+
+#home ul li .card .options a.del:hover {
+  color: red;
 }
 
 #home .new a {

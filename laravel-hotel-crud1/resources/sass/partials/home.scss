@@ -11,7 +11,7 @@
         width: 100%;
 
         li {
-            width: 33%;
+            width: 50%;
 
             .card {
                 margin: 5px;
@@ -28,6 +28,21 @@
 
                 h3 {
                     border-bottom: solid 1px black;
+                }
+
+                .options {
+
+                    a.mod:hover{
+                        color:yellow;
+                    }
+
+                    a.del {
+                        margin-left: 5px;
+    
+                        &:hover {
+                            color: red;
+                        }
+                    }
                 }
             }
         }

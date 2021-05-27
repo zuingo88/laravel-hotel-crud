@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'employeeController@home')->name('home');
+
+Route::get('/employee{id}', 'employeeController@employee')->name('employee');
+
+Route::get('destroy/{id}', 'employeeController@destroy')->name('destroy');
