@@ -13,8 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//home
 Route::get('/', 'employeeController@home')->name('home');
 
+//employee
 Route::get('/employee{id}', 'employeeController@employee')->name('employee');
 
+//destroy
 Route::get('destroy/{id}', 'employeeController@destroy')->name('destroy');
+
+//edit
+Route::get('edit/employee/{id}', 'employeeController@edit')->name('edit');
+
+//update
+Route::post('update/employee/{id}', 'employeeController@update')->name('update');

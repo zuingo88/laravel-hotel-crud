@@ -13,7 +13,7 @@
                                     <h3>{{ $i++ }}. {{ $employee->firstname }} {{ $employee->lastname }}</h3>
                                 </a>
                                 <div class="options flex">
-                                    <a class="mod" href="">
+                                    <a class="mod" href="{{ route('edit', $employee->id) }}">
                                         <h3>
                                             <i class="fas fa-user-edit"></i>
                                         </h3>
